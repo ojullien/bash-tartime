@@ -1,10 +1,10 @@
 #!/bin/bash
 ## -----------------------------------------------------------------------------
 ## Linux Scripts.
-## Compresses files to a timestamped bz2 archive
+## Simple tool for compressing files to an auto timestamped bz2 archive.
 ##
-## @package ojullien\Shell\bin
-## @license MIT <https://github.com/ojullien/Shell/blob/master/LICENSE>
+## @package ojullien\bash\bin
+## @license MIT <https://github.com/ojullien/bash-tartime/blob/master/LICENSE>
 ## -----------------------------------------------------------------------------
 #set -o errexit
 set -o nounset
@@ -14,7 +14,7 @@ set -o pipefail
 if (($# < 2)) || [[ -z "$1" ]] || [[ -z "$2" ]]; then
     echo "Usage: $(basename "$0") <destination> <source1> [source2] ..."
     echo -e "\tCompress the source into a timestamped bz2 archive."
-    echo -e "\t<destination>\tDestination archive."
+    echo -e "\t<destination>\tDestination archive: destination-hostname-YYYYMMDD_HHMM.tar.bz2"
     echo -e "\t<source>\tSource to compress"
     exit 1
 fi
