@@ -23,7 +23,7 @@ readonly m_DIR_SYS="${m_INSTALL_DESTINATION_DIR}/sys" # Directory holds system f
 
 # SOURCE
 readonly m_INSTALL_APP_NAME="tartime"
-readonly m_INSTALL_SOURCE_APP_DIR="$(realpath "${m_DIR_REALPATH}/../src/app/${m_INSTALL_APP_NAME}")"
+#readonly m_INSTALL_SOURCE_APP_DIR="$(realpath "${m_DIR_REALPATH}/../src/app/${m_INSTALL_APP_NAME}")"
 readonly m_INSTALL_SOURCE_BIN_FILE="$(realpath "${m_DIR_REALPATH}/../src/bin/${m_INSTALL_APP_NAME}.sh")"
 
 ## -----------------------------------------------------------------------------
